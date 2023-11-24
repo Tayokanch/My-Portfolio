@@ -1,0 +1,42 @@
+:root{
+  --main-color:  #096a9f;
+  --header-color: #dedad7;
+  --side-color:#123243;
+  --another-color: #575c5f;
+  --deepbrown-color: #cd8f5d;
+  --match-color: #01e0f9; 
+  --blue-color: #05a7ff;
+  --lightcream: #faebd7;
+
+}
+
+
+
+#root{
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-areas: 'side header'
+                        'side main';
+
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 120px 1fr;
+
+}
+
+header{
+  background-color: var(--match-color);
+  grid-area: header;
+  position: static;
+}
+
+aside{
+  background-color:var(--side-color);
+  grid-area: side;
+}
+
+main{
+  background-color: var(--main-color);
+  grid-area: main;
+ 
+}

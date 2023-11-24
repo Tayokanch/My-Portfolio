@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Bebas+Neue&family=Black+Ops+One&family=Bungee&family=Crimson+Pro:wght@900&family=Lilita+One&family=Press+Start+2P&family=Rajdhani&family=Roboto&family=Slabo+27px&display=swap');
+.about-main {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    padding: 10% 10px;
+    position: relative;
+}
+
+.hire-me {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: var(--side-color);
+    padding: 20px 30px; 
+    color: white; 
+    font-weight: bold;
+    font-family: 'Lilita One';
+    font-size: 2.5rem;
+    box-shadow: 2px 2px 4px var(--match-color); 
+    z-index: 1;
+    animation: fallAndDrop 2s ease-in-out forwards; 
+}
+
+.delete-hire-me{
+    display: none;
+}
+
+@keyframes fallAndDrop {
+    0% {
+        transform: translate(-50%, -50%) translateY(-100vh); /* Adjust the translateY value */
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+.hire-me::after {
+    content: 'X';
+    position: absolute;
+    font-size: 1.2rem;
+    font-family: 'roboto';
+    top: -11px;
+    right: -11px;
+    background-color: var(--match-color);
+    border-radius: 50%;
+    width: 30px; 
+    height: 30px;
+    text-align: center;
+    line-height: 30px; 
+    cursor: pointer;
+    color: white; 
+}
+
+
+
+
+    .about-main  >section:first-of-type{ 
+        width: 100%;
+    }
+    
+.about-main  >section:first-of-type >p{ 
+    font-family: 'Crimson Pro';
+    font-size: 2rem;
+    line-height: 2;
+    text-align: center;
+    color: var(--match-color);
+    color: #faebd7;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 5); 
+
+    margin-bottom: 40px;
+ 
+}
+
+
+
+.about-main  >section:first-of-type >div{ 
+    display:grid;
+    grid-auto-flow: column;
+    justify-content: center;
+
+}
+
+.about-main  >section:first-of-type >div > img{
+    margin-right: 20px;
+    box-shadow: 2px 2px 4px antiquewhite; 
+
+}
+
+.about-main  >section:first-of-type >div > img:hover{
+    cursor: pointer;
+}
+
+
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    
+    40% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateX(-10px);
+    }
+}
+
+.about-main  > section:last-of-type > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    animation: bounce 5s ease-in-out infinite; 
+}
+
+

@@ -1,0 +1,168 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Bebas+Neue&family=Black+Ops+One&family=Bungee&family=Crimson+Pro:wght@900&family=Press+Start+2P&family=Rajdhani&family=Roboto&family=Slabo+27px&display=swap');
+.profile-main{
+    width: 100%;
+    display: grid;
+    grid-template-areas: 'header header '
+                          'left  right';
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px 1fr;
+    column-gap: 20px;
+    row-gap: 50px;
+    background-color:  #007cb9;
+    }
+   
+ 
+    .profile-main > section:nth-of-type(1){
+        grid-area: header;
+        background-color:  #005792;
+        text-align: center;
+        padding-top: 10px;
+        color: var(--lightcream);
+       
+    }
+
+    .profile-main > section:nth-of-type(1) > h3{
+        font-size: 1.8rem;
+        font-family: 'Alata';
+        padding-bottom: 3px;
+        color: var(---color);
+        color: #ee8572;
+    }
+
+
+
+    .profile-main > section:nth-of-type(1) > p {
+        font-size: 1rem;
+        font-family: 'Black Ops One';
+        overflow: hidden; 
+        white-space: nowrap; 
+        animation: typing 3s steps(40, end) 1;
+        text-shadow: 2px 3px 4px var(--side-color);
+    }
+    
+    @keyframes typing {
+        from {
+            width: 10%;
+        }
+        to {
+            width: 100%;
+        }
+    }
+    
+    .profile-main > section:nth-of-type(1) > p {
+        font-size: 1rem;
+        font-family: 'Black Ops One';
+        overflow: hidden; 
+        white-space: nowrap; 
+        animation: typing 3s steps(40, end) infinite 1m; 
+    }
+    
+    
+    .profile-main > section:nth-of-type(2){
+        grid-area: left;
+        padding-left: 20px;
+        margin-bottom: 30px;
+        
+
+    }
+
+    .profile-main > section:nth-of-type(2) > div:first-of-type{
+        text-align: center;
+        font-size: 2rem;
+        display: grid;
+        justify-content: center;
+
+
+    }
+
+    .profile-main > section:nth-of-type(2) > div >p{
+        font-family: 'roboto';
+        padding: 10px 40px;
+        color: var(--lightcream);
+        background-color:var(--side-color);
+        box-shadow: inset 0px 0px 2px 3px var(--lightcream);
+        margin-bottom: 10px;
+
+    }
+
+
+    .profile-main > section:nth-of-type(2) >p {
+        color: var(--lightcream);
+        font-family: 'roboto';
+        text-shadow: 2px 2px 4px black;
+        line-height: 1.5;
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-align: justify;
+      
+    }
+
+ 
+    .profile-main > section:nth-of-type(3){
+        grid-area:right;
+        margin-bottom: 30px;
+    }
+
+    .profile-main > section:nth-of-type(3) > div:first-of-type{
+        text-align: center;
+        font-size: 2rem;
+        display: grid;
+        justify-content: center;
+
+
+    }
+
+    .profile-main > section:nth-of-type(3) > div >p{
+        font-family: 'roboto';
+        padding: 10px 40px;
+        color: var(--lightcream);
+        background-color:var(--side-color);
+        box-shadow: inset 0px 0px 2px 3px var(--lightcream);
+        margin-bottom: 50px;
+
+    }
+    .profile-main > section:nth-of-type(3) > ul{
+        text-align: justify;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        place-items: center; 
+        row-gap: 30px;   
+        list-style-type: none;
+
+    }
+
+
+    .profile-main > section:nth-of-type(3) > ul img {
+        box-shadow: 2px 5px 5px rgba(255, 255, 255, 0.5),
+                    -2px -5px 5px var(--side-color),
+                    2px 5px 5px rgba(255, 255, 255, 0.5),
+                    -2px -5px 5px var(--side-color),
+                    2px 5px 5px rgba(255, 255, 255, 0.5),
+                    -2px -5px 5px var(--side-color); 
+    }
+    
+    .profile-main > section:nth-of-type(3) > ul > li {
+        text-align: center;
+        font-family: 'roboto';
+        line-height: 1.5;
+        font-size: 1.2rem;
+        opacity: 0; 
+        transform: translateY(150px); 
+        animation: fadeInUp 3s forwards, transition, transform 2s; 
+    }
+    
+    .profile-main > section:nth-of-type(3) > ul img:hover {
+        transform: scale(1.2);
+        transition: transform 0.5s; 
+        cursor: pointer;
+    }
+    
+    
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    

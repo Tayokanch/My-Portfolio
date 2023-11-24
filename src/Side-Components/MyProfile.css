@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&family=Press+Start+2P&family=Roboto&display=swap');
+:root{
+    --main-color:  #ac9d91;
+    --header-color: #dedad7;
+    --side-color:#b4bfc5;
+    --deepbrown-color: #784f2d;
+    --text-color: #05a7ff;
+  }
+  
+  .myprofile-container{
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: 100px 1fr 1fr;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    padding: 0px 20px 0 20px;
+    overflow-y: scroll;
+
+}
+.myprofile-container > .logo{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.myprofile-container > .logo > img{
+    width:30%;
+    box-shadow:  0 0 2px 3px   #05a7ff;
+    border: 2px solid var(--match-color);
+    border-radius: 50%;
+
+}
+.myprofile {
+    text-align: center;
+    padding: 20px 40px 0 40px;
+    margin-bottom: 50px;
+
+}
+
+
+.myprofile > .image-box {
+    width: 100%;
+
+}
+.myprofile > .image-box > img{
+    width: 100%;
+    border-radius: 0 30px;
+    border: solid var(--match-color);
+}
+
+.myprofile > figcaption{
+    font-family: 'roboto';
+    font-size: 1.5rem;
+    color: var(--match-color);
+    ;
+ 
+}
+.myprofile > h5{    
+    font-family: 'Black Ops One';
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 5px;
+    background-color: var( --match-color);
+   color: var( --side-color);
+   margin-top: 10px;
+}
+
+.contact-info {
+    padding: 0 30px;
+    justify-content: center;
+    align-items: start;
+}
+
+.icon-box{
+    display: grid;
+    align-items: center;
+    padding: 10px;
+    box-shadow: inset 0 0 3px 2px   #05a7ff;
+
+}
+
+.contact-info > div{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    margin-bottom: 30px;
+
+}
+
+.contact-info > div > .icon-box{
+    margin-right: 20px;
+    }
+
+    .contact-info > div >div:first-of-type {
+        color: var( --match-color);
+    }
+    
+    .contact-info > div >div:last-of-type {
+        color: #05a7ff;
+    }
