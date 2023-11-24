@@ -1,7 +1,7 @@
 import React from "react";
 import "./Profile.css";
 import Html from "../assets/html.png";
-import Css from "../assets/Css.png";
+import Css from "../assets/css.png";
 import Js from "../assets/js.png";
 import react from "../assets/react.png";
 import Git from "../assets/git.png";
