@@ -14,12 +14,12 @@ function Portfolio() {
     <main className="main-porfolio">
       <section className="portfolio">
         <div>
-          <p>Dashboard</p>
+          <p>Music</p>
         </div>
         <div>
           <img src={project3} alt="Dashboard-Project" />
           <p className="project-description">
-{/*             This is a dynamic Dashboard empowering users to create posts and add
+            {/*             This is a dynamic Dashboard empowering users to create posts and add
             comments seamlessly. Upon submission, the content is sent to an API
             via a POST request. To ensure real-time updates, a GET API is
             employed to refresh the dashboard with any new posts and comments.
@@ -38,7 +38,7 @@ function Portfolio() {
         <div>
           <img src={project2} alt="Shopping-Cart" />
           <p className="project-description">
-{/*             A shopping cart that allows users to pick items by clicking on each
+            {/*             A shopping cart that allows users to pick items by clicking on each
             item in the store section and get it rendered in the cart. In the
             cart, each item comes with a minus button used for decreasing the
             value of the item and also for deleting the item from the cart.
@@ -53,13 +53,14 @@ function Portfolio() {
 
       <section className="portfolio">
         <div>
-          <p>Music App</p>
+          <p>Dashboard</p>
         </div>
         <div>
           <img src={project1} alt="Shopping-Cart" />
           <p className="project-description">
-{/*             This is a music app, user can play music and its well responsive
- */}          </p>
+            {/*             This is a music app, user can play music and its well responsive
+             */}{" "}
+          </p>
           <button onClick={() => window.open(shoppingCart, "_blank")}>
             Explore
           </button>
