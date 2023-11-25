@@ -2,6 +2,7 @@
   --main-color:  #096a9f;
   --header-color: #dedad7;
   --side-color:#123243;
+  --side2-color:#1a4c68;
   --another-color: #575c5f;
   --deepbrown-color: #cd8f5d;
   --match-color: #01e0f9; 
@@ -25,13 +26,13 @@
 }
 
 header{
-  background-color: var(--match-color);
+  background-color: var(--lightcream);
   grid-area: header;
   position: static;
 }
 
 aside{
-  background-color:var(--side-color);
+  background-color: #686952;
   grid-area: side;
 }
 

@@ -6,6 +6,7 @@ import Twitter from "../assets/twitter.png";
 import Instagram from "../assets/instagram.png";
 import Git from "../assets/git.png";
 import Linkedin from "../assets/linkedin.png";
+import MainBg from "../assets/mainbg.png";
 
 function Home() {
   const [clickHireMe, setClickHireMe] = useState(false);
@@ -32,7 +33,7 @@ function Home() {
         <img src={Imagebg} alt="Image" />
       </section>
       <strong
-        className={`hire-me ${clickHireMe ? 'delete-hire-me' : ""}`}
+        className={`hire-me ${clickHireMe ? "delete-hire-me" : ""}`}
         onClick={deleteHireMe}
       >
         Hire me!

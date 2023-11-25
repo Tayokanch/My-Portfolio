@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Bebas+Neue&family=Black+Ops+One&family=Bungee&family=Crimson+Pro:wght@900&family=Lilita+One&family=Press+Start+2P&family=Rajdhani&family=Roboto&family=Slabo+27px&display=swap');
+
 .about-main {
     width: 100%;
     height: 100vh;
@@ -7,6 +8,9 @@
     column-gap: 10px;
     padding: 10% 10px;
     position: relative;
+    background-image: url('../assets/mainbg2.png')  ;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hire-me {

@@ -4,9 +4,8 @@
     width: 100%;
     background-color: #07527de7;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-auto-rows: 200px;
-    column-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));   
+     column-gap: 20px;
     padding: 0 10px ;
 
 
@@ -72,4 +71,9 @@
     display: block;
     border-radius: 10px;
       
+}
+@media screen and (max-width: 468px) {
+    .main-porfolio {
+        grid-template-columns: repeat(auto-fit, minmax(70%, 1fr));
+    }
 }

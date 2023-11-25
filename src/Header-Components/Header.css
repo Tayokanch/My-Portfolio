@@ -5,6 +5,8 @@
     --text-color: #05a7ff;
     --side-color:#123243;
     --deepbrown-color: #784f2d;
+    --lightcream: #faebd7;
+
 }
 
 header{
@@ -12,7 +14,6 @@ header{
     display: grid;
     grid-template-columns: 200px 2fr;
     column-gap: 20px;
-    background-color: var(--text-color);
 }
 
 header > h1{
@@ -26,6 +27,7 @@ header > ul{
    display: grid;
    grid-auto-flow: column;
    background-color: var(  --side-color);
+   background-color: #1a4c68;
    column-gap: 10px;
    border-radius: 0px 0px 0px 20px;
    align-items: center;
@@ -37,7 +39,7 @@ header > ul> li{
     padding: 10px;
     font-family: 'roboto';
     font-size: 1.3rem;
-    color: var(--match-color);
+    color: #fcc66f;
     cursor: pointer;
 }
 
