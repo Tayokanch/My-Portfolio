@@ -8,13 +8,13 @@
     --lightcream: #faebd7;
 
 }
-
 header{
     width: 100%;
     display: grid;
-    grid-template-columns: 200px 2fr;
+    grid-template-columns: 200px 1fr;
     column-gap: 20px;
 }
+
 
 header > h1{
     align-self: end;
@@ -34,9 +34,7 @@ header > ul{
 }
 
 header > ul> li{
-    position: relative;
     list-style-type: none;
-    padding: 10px;
     font-family: 'roboto';
     font-size: 1.3rem;
     color: #fcc66f;
@@ -68,3 +66,20 @@ header > ul> li:hover::after{
 }
 
 
+@media only screen and (max-width: 600px) {
+    header {
+        display: grid;
+       grid-template-columns: 1fr ;
+
+    }
+    header > h1{
+        text-align: center;
+   
+    }
+    header > ul {
+        display: grid;
+        grid-auto-rows: auto;
+        column-gap: 0px;
+        border-radius: 0px;
+    }
+  }

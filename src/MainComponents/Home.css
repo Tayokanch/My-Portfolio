@@ -90,6 +90,7 @@
 }
 
 .about-main  >section:first-of-type >div > img{
+    width: 2rem;
     margin-right: 20px;
     box-shadow: 2px 2px 4px antiquewhite; 
 
@@ -123,3 +124,13 @@
 }
 
 
+@media only screen and (max-width: 600px) {
+
+    .about-main {
+        grid-template-columns: 1fr ;
+    }
+    
+    .about-main  > section:last-of-type > img {
+      display: none; 
+    }
+  }

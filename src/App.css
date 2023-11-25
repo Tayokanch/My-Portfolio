@@ -15,13 +15,13 @@
 
 #root{
   width: 100%;
-  height: 100vh;
+  height:100vh;
   display: grid;
   grid-template-areas: 'side header'
                         'side main';
 
   grid-template-columns: 250px 1fr;
-  grid-template-rows: 120px 1fr;
+  grid-template-rows: auto 1fr;
 
 }
 
@@ -40,4 +40,14 @@ main{
   background-color: var(--main-color);
   grid-area: main;
  
+}
+
+@media only screen and (max-width: 600px) {
+  #root {
+    grid-template-areas: 'header'
+                         'main'
+                         'side';
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+  }
 }
