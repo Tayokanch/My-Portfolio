@@ -11,9 +11,6 @@ import myPicture from "../assets/myPic3.jpg";
 function MyProfile() {
   return (
     <section className="myprofile-container">
-      <figure className="logo">
-        <img src={logo} alt="Logo" />
-      </figure>
       <figure className="myprofile">
         <div className="image-box">
           <img src={myPicture} alt="Tayo Quadri" className="mypic" />
