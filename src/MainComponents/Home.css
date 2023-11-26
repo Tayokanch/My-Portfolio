@@ -20,11 +20,11 @@
     transform: translate(-50%, -50%); 
     background-color: var(--side-color);
     padding: 20px 30px; 
-    color: white; 
+    color:var(--lightcream); 
     font-weight: bold;
     font-family: 'Lilita One';
     font-size: 2.5rem;
-    box-shadow: 2px 2px 4px var(--match-color); 
+    box-shadow: 2px 2px 4px var(--deepbrown-color); 
     z-index: 1;
     animation: fallAndDrop 2s ease-in-out forwards; 
 }
@@ -50,7 +50,7 @@
     font-family: 'roboto';
     top: -11px;
     right: -11px;
-    background-color: var(--match-color);
+    background-color: var(--deepbrown-color);
     border-radius: 50%;
     width: 30px; 
     height: 30px;
@@ -133,4 +133,8 @@
     .about-main  > section:last-of-type > img {
       display: none; 
     }
+    .hire-me{
+        display: none;
+    }
+
   }
