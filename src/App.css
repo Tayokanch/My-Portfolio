@@ -50,4 +50,10 @@ main{
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
   }
+
+  aside{
+    display: none;
+    background-color: #686952;
+    grid-area: side;
+  }
 }

@@ -7,6 +7,9 @@ import Instagram from "../assets/instagram.png";
 import Git from "../assets/git.png";
 import Linkedin from "../assets/linkedin.png";
 import MainBg from "../assets/mainbg.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 function Home() {
   const [clickHireMe, setClickHireMe] = useState(false);
@@ -21,12 +24,26 @@ function Home() {
           Hello and welcome! <span>👋</span> Feel free to explore my portfolio
           by navigating through the navbar. I hope you enjoy the content!
         </p>
+        <div className="logos-container">
+          <p id="media"> SOCIAL MEDIA:</p>
+          <div className="logos">
+            <img src={Git}></img>
+            <img src={Linkedin}></img>
+            <img src={Twitter}></img>
+            <img src={Instagram}></img>
+          </div>
+        </div>
 
-        <div className="logos">
-          <img src={Git}></img>
-          <img src={Linkedin}></img>
-          <img src={Twitter}></img>
-          <img src={Instagram}></img>
+        <div className="contact">
+          <p>Contact me @</p>
+          <div>
+            <FontAwesomeIcon className="contact-icon" icon={faEnvelope} />
+            <p>quadrimotayo@gmail.com</p>
+          </div>
+          <div>
+            <FontAwesomeIcon className="contact-icon" icon={faPhone} />
+            <p>+447466072016</p>
+          </div>
         </div>
       </section>
       <section>
