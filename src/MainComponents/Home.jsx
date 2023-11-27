@@ -20,10 +20,12 @@ function Home() {
   return (
     <main className="about-main">
       <section>
-        <p>
-          Hello and welcome! <span>👋</span> Feel free to explore my portfolio
-          by navigating through the navbar. I hope you enjoy the content!
-        </p>
+        <strong>
+          <p>
+            Hello and welcome! <span>👋</span> Feel free to explore my portfolio
+            by navigating through the navbar. I hope you enjoy the content!
+          </p>
+        </strong>
         <div className="logos-container">
           <p id="media"> SOCIAL MEDIA:</p>
           <div className="logos">
