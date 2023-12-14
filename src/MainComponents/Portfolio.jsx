@@ -3,12 +3,14 @@ import "./Portfolio.css";
 import project1 from "../assets/project1.png";
 import project2 from "../assets/project2.png";
 import project3 from "../assets/Project3.png";
+import project4 from "../assets/project4.png";
 
 import { useNavigate } from "react-router-dom";
 
 function Portfolio() {
   const spotify = "https://cheery-belekoy-b038cd.netlify.app/";
   const dashboard = "https://www.facebook.com/";
+  const Ticket = "https://cosmic-fox-405b39.netlify.app/";
 
   return (
     <main className="main-porfolio">
@@ -31,6 +33,25 @@ function Portfolio() {
           </button>
         </div>
       </section>
+
+      <section className="portfolio">
+        <div>
+          <p>Train Tickets App</p>
+        </div>
+        <div>
+          <img src={project4} alt="Dashboard-Project" />
+          <p className="project-description">
+            {/*             This is a dynamic Dashboard empowering users to create posts and add
+            comments seamlessly. Upon submission, the content is sent to an API
+            via a POST request. To ensure real-time updates, a GET API is
+            employed to refresh the dashboard with any new posts and comments.
+            Users can also delve into specific content by clicking on the post
+            title to view the associated comments. */}
+          </p>
+          <button onClick={() => window.open(Ticket, "_blank")}>Explore</button>
+        </div>
+      </section>
+
       <section className="portfolio">
         <div>
           <p>Shopping Cart</p>
