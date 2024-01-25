@@ -7,7 +7,6 @@ import Profile from "./MainComponents/Profile";
 import Contact from "./MainComponents/Contact";
 
 import Portfolio from "./MainComponents/Portfolio";
-import Resume from "./MainComponents/Resume";
 import Home from "./MainComponents/Home";
 
 import "./App.css";
@@ -26,7 +25,6 @@ function App() {
         <Route path="/AboutMe" element={<Profile />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Portfolio" element={<Portfolio />} />
-        <Route path="/Resume" element={<Resume />} />
       </Routes>
     </>
   );

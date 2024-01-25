@@ -5,13 +5,14 @@ import Css from "../assets/css.png";
 import Js from "../assets/js.png";
 import react from "../assets/react.png";
 import Git from "../assets/git.png";
+import Node from "../assets/node.png";
 
 function Profile() {
   return (
     <main className="profile-main">
       <section>
         <h3>Profile</h3>
-        <p>I am a Frontend Developer & an Aspiring Full Stack Developer</p>
+        <p> Junior Software Developer</p>
       </section>
 
       <section>
@@ -19,18 +20,17 @@ function Profile() {
           <p>About me</p>
         </div>
         <p>
-          I am Kazeem Omotayo Quadri, a dedicated software developer currently
-          immersed in a transformative 6-month full-stack development boot camp
-          at Boolean UK. This experience is pivotal for refining my coding
-          proficiency and fostering a deep sense of confidence to tackle
-          real-world challenges. Prior to embarking on this boot camp journey, I
-          delved into self-taught learning and earned Meta Frontend Certificates
-          in JavaScript, Version Control System (Git), HTML, and CSS. One aspect
-          of Boolean UK that particularly resonates with me is its emphasis on
-          pair programming. I recognize the value this collaborative approach
-          adds to teamwork, a crucial skill in the software development field. I
-          believe that honing my abilities in pair programming will
-          significantly contribute to my performance within a team setting.
+          I am Omotayo Quadri, a software developer currently enrolled in a
+          6-month full-stack development boot camp at Boolean UK. This program
+          is refining my coding skills and instilling confidence to address
+          real-world challenges. With prior self-taught learning and Meta
+          Frontend Certificates, I've further delved into frontend technologies
+          such as HTML, CSS, JavaScript, and React during the boot camp.
+          Proficient in client-side API interactions, HTTP requests, and
+          authentication, I've also been introduced to Express.js for server
+          development and leveraged SQL and Prisma for efficient database
+          management on the backend. This immersive experience has equipped me
+          with a robust skill set for professional software development.
         </p>
       </section>
       <section>
@@ -57,6 +57,10 @@ function Profile() {
           <li>
             <img src={Git} alt="Git-Logo" />
             <figcaption>Git</figcaption>
+          </li>
+          <li>
+            <img src={Node} alt="Git-Logo" />
+            <figcaption>Node</figcaption>
           </li>
         </ul>
       </section>

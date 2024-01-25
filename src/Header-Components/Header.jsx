@@ -24,7 +24,6 @@ function Header() {
       <ul>
         <li onClick={() => handleClick("Home", "/")}>Home</li>
         <li onClick={() => handleClick("Profile", "/Aboutme")}>Profile</li>
-        <li onClick={() => handleClick("Resume", "/Resume")}>Resume</li>
         <li onClick={() => handleClick("Portfolio", "/Portfolio")}>
           Portfolio
         </li>
