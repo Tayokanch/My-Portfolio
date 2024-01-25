@@ -3,8 +3,7 @@ import "./Portfolio.css";
 import project1 from "../assets/project1.png";
 import project2 from "../assets/project2.png";
 import project3 from "../assets/Project3.png";
-import project4 from "../assets/Project3.png";
-
+import train from "../assets/train.png";
 import { useNavigate } from "react-router-dom";
 
 function Portfolio() {
@@ -39,7 +38,7 @@ function Portfolio() {
           <p>Train Tickets App</p>
         </div>
         <div>
-          <img src={project4} alt="Dashboard-Project" />
+          <img src={train} alt="Dashboard-Project" />
           <p className="project-description">
             {/*             This is a dynamic Dashboard empowering users to create posts and add
             comments seamlessly. Upon submission, the content is sent to an API
